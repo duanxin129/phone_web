@@ -58,15 +58,15 @@ footer dl dd{
 
 
 footer .home span{
-    background: url(/static/main/img/home.png) no-repeat;
+    background: url(/static/main/img/home.png);
     background-size:0.513889rem;
 }
 footer .market span{
-    background:url(/static/main/img/market.png) no-repeat;
+    background:url(/static/main/img/market.png);
     background-size:0.513889rem;
 }
 footer .cart span{
-    background:url(/static/main/img/cart.png) no-repeat;
+    background:url(/static/main/img/cart.png);
     background-size:0.513889rem;
 }
 footer .mine span{

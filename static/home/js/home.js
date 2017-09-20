@@ -4,7 +4,7 @@ $(document).ready(function(){
         swiper2()
     },100)
 })
-
+//ÂÖ²¥
 function swiper1() {
     var mySwiper1 = new Swiper('#topSwiper', {
         direction: 'horizontal',

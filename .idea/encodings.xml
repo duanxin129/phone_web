@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/axf/forms/login.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axf/models.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/axf/urls.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/market/css/market.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/mine/css/login.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/mine/css/mine.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/mine/js/login.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/mine/js/mine.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/axf/market.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/templates/axf/mine.html" charset="UTF-8" />
+  </component>
+</project>

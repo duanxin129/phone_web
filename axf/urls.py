@@ -4,7 +4,14 @@ from . import views
 
 urlpatterns = [
     url(r'^home/$', views.home, name="home"),
-    url(r'^market/$', views.market, name="market"),
+    url(r'^market/(\d+)/$', views.market, name="market"),
     url(r'^cart/$', views.cart, name="cart"),
     url(r'^mine/$', views.mine, name="mine"),
+
+    #登陆
+    url(r'^login/$',views.login,name='login'),
+    # 注册
+    url(r'^register/$', views.register, name="register"),
+    # 验证账号是否被注册
+    url(r'^checkuserid/$', views.checkuserid, name="checkuserid"),
 ]
