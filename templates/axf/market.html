@@ -15,7 +15,7 @@
                 {% for item in leftSlider %}
                 <li>
                     <span class="yellowSlide"></span>
-                    <a class="left" href="/market/{{item.typeid}}">{{item.typename}}</a>
+                    <a href="/market/{{item.typeid}}/0/0/">{{item.typename}}</a>
                 </li>
                 {% endfor %}
             </ul>
@@ -47,19 +47,31 @@
                     </a>
                     <section>
 						<button ga="{{item.productid}}" class="subShopping">-</button>
-						<span id="{{item.productid}}">0</span>
+						<span id="{{item.productid}}">{{item.num|default:0}}</span>
 						<button ga="{{item.productid}}" class="addShopping">+</button>
 					</section>
                 </li>
                 {% endfor %}
             </ul>
+            <div id="typediv">
+                <div>
+                    {% for item in childList %}
+                    <a href="/market/{{categoryid}}/{{item.childId}}/0/"><span>{{item.childName}}</span></a>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div id="sortdiv">
+                <div>
+                    <a href="/market/{{categoryid}}/{{cid}}/0/" class="sorta"><span>综合排序</span></a>
+                    <a href="/market/{{categoryid}}/{{cid}}/1/" class="sorta"><span>销量排序</span></a>
+                    <a href="/market/{{categoryid}}/{{cid}}/2/" class="sorta"><span>价格最低</span></a>
+                    <a href="/market/{{categoryid}}/{{cid}}/3/" class="sorta"><span>价格最高</span></a>
+                </div>
+            </div>
         </menu>
 
-        <div id="typediv">
-            {% for item in childList %}
-            <a href="#"><span>{{item.childName}}</span></a>
-            {% endfor %}
-        </div>
+
 
 
     </section>
