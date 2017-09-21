@@ -28,7 +28,6 @@ $(document).ready(function() {
                     document.getElementById(pid).innerHTML = data.data
                     document.getElementById(pid + "price").innerHTML = data.price
                     if (data.data == 0) {
-                        //window.location.href = "http://127.0.0.1:8001/cart/"
                         var li = document.getElementById(pid + "li")
                         li.parentNode.removeChild(li)
                     }

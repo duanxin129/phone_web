@@ -76,16 +76,16 @@ def cart(request):
     if token != None:
         user = User.objects.get(userToken=token)
         cartslist = Cart.objects.filter(userAccount = user.userAccount)
-
-
     return render(request, 'axf/cart.html', {"title":"购物车","cartslist":cartslist})
+
 
 def mine(request):
     username = request.session.get("username","未登录")
     return render(request, 'axf/mine.html', {"title":"我的","username":username})
+
+
 #登陆
 from .forms.login import LoginForm
-
 def login(request):
     if request.method == "POST":
         f = LoginForm(request.POST)
